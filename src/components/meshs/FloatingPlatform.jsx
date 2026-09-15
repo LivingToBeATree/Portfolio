@@ -2,10 +2,10 @@ import { Edges } from '@react-three/drei'
 
 export default function FloatingPlatform({ position = [0, 0, 0] }) {
     return (
-        <group position={[0, 0, 0]}>
+        <group position={position}>
             {/* The white rectangular platform */}
             <mesh position={[0, 0, 0]}>
-                <boxGeometry args={[6, 0.4, 4]} />
+                <boxGeometry args={[9, 0.2, 8]} />
                 <meshStandardMaterial
                     color="#ffffff"
                     roughness={0.4}
